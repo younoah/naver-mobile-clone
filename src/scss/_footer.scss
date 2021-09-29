@@ -1,0 +1,28 @@
+@import './mixins';
+
+.footer {
+  margin: 56px 0 128px 0;
+
+  &__util {
+    margin: 10px 0;
+    color: #929294;
+    text-align: center;
+
+    &__link {
+      padding: 3px 9px;
+      font-size: 13px;
+      letter-spacing: -0.5px;
+    }
+
+    &__logo {
+      width: 74px;
+      height: 14px;
+      margin: 0 auto;
+      @include setImage(
+        $url: '/src/images/sp/sp_main.png',
+        $size: 196px 182px,
+        $position: 0 -100px
+      );
+    }
+  }
+}

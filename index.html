@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/images/symbol/naver-symbol.png" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>NAVER</title>
+  </head>
+  <body>
+    <main class="app">
+      <!-- Header -->
+      <header class="header">
+        <button
+          class="header__menu"
+          type="button"
+          aria-label="메뉴 버튼"
+        ></button>
+        <nav class="header__mydata">
+          <ul class="header__mydata__list">
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link qr"
+                href="#"
+                aria-label="QR 체크인"
+              ></a>
+            </li>
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link npay"
+                href="#"
+                aria-label="네이버 페이"
+              ></a>
+            </li>
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link alert"
+                href="#"
+                aria-label="알림"
+              ></a>
+            </li>
+            <li class="header__mydata__list__item">
+              <a
+                class="header__mydata__list__item__link na"
+                href="#"
+                aria-label="마이메뉴"
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- SearchBar -->
+      <div class="searchbar">
+        <form class="searchbar__form" action="#" method="#">
+          <a href="#" class="searchbar__logo">
+            <span class="searchbar__logo__image"></span>
+          </a>
+          <input
+            class="searchbar__input"
+            type="search"
+            id="search"
+            title="검색어를 입력해주세요."
+            placeholder="검색어를 입력해주세요."
+            autocomplete="off"
+          />
+          <button type="button" class="searchbar__button-voice"></button>
+        </form>
+      </div>
+
+      <!-- NavBar -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/news.png"
+                alt="뉴스판"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text">뉴스판</div>
+            </a>
+          </li>
+          <li class="navbar__shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/shopping.png"
+                alt="쇼핑판"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text">쇼핑판</div>
+            </a>
+          </li>
+          <li class="navbar__shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/stock.png"
+                alt="경제지표판"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text">경제지표판</div>
+            </a>
+          </li>
+          <li class="navbar__shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/sports.png"
+                alt="스포츠판"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text">스포츠판</div>
+            </a>
+          </li>
+          <li class="navbar__shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/mail.png"
+                alt="메일"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text">메일</div>
+            </a>
+          </li>
+          <li class="navbar__shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/cafe.png"
+                alt="카페"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text">카페</div>
+            </a>
+          </li>
+          <li class="navbar__shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/cafe.png"
+                alt="블로그"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text">블로그</div>
+            </a>
+          </li>
+          <li class="navbar__shortcut-shortcut">
+            <a href="#" class="navbar__shortcut__link">
+              <img
+                src="./src/images/shorcut/more.png"
+                alt="more"
+                class="navbar__image"
+              />
+              <div class="navbar__shortcut__text hidden">more</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <section class="content">
+        <!-- AdBar -->
+        <div class="content__ad">
+          <img
+            src="./src/images/ad/ad.png"
+            alt="광고"
+            class="content__ad__image"
+          />
+        </div>
+
+        <!-- Card -->
+        <div class="content__card">
+          <div class="content__card__item weather">
+            <div class="weather__wrap">
+              <div class="weather__info">
+                <span class="weather__info__image"></span>
+                <div class="weather__info__text">
+                  <strong>24°C 서울</strong>
+                  <span
+                    >미세
+                    <p>좋음</p>
+                    · 초미세
+                    <p>좋음</p>
+                  </span>
+                </div>
+              </div>
+              <a href="#" class="weather__location">
+                <p>경기도 고양시</p>
+                <span class="weather__location__image"></span>
+              </a>
+            </div>
+            <a class="weather__more">
+              위치 찾기를 눌러 현 위치의 시간대별 · 주간날씨와
+              <br />
+              미세먼지 예보를 여기에서 바로 보세요
+            </a>
+          </div>
+          <div class="content__card__item card-sm">
+            <img
+              src="/src/images/section/content/card-sm.png"
+              alt="현대카드"
+              class="card-sm__image"
+            />
+            <span class="card-sm__close"></span>
+          </div>
+          <div class="content__card__item ai">
+            <div class="ai__wrap">
+              <span class="ai__image"></span>
+              <a class="ai__text">
+                더 편리해진 <strong>AI</strong> 검색 기능
+                <br />
+                <strong>네이버앱</strong>에서 만나보세요
+              </a>
+            </div>
+            <span class="ai__more"> 앱 사용하기</span>
+          </div>
+          <div class="content__card__item now">
+            <span class="now__image"></span>
+            <ul class="now__list scroll">
+              <li class="now__item">
+                <a href="#" class="now__item__link">
+                  <img
+                    src="/src/images/section/now/now1.png"
+                    alt="김필과 야간합주실🎤"
+                    class="now__item__image"
+                  />
+                </a>
+              </li>
+              <li class="now__item">
+                <a href="#" class="now__item__link">
+                  <img
+                    src="/src/images/section/now/now2.png"
+                    alt="유기현이랑 기다리는 심야아이..."
+                    class="now__item__image"
+                  />
+                </a>
+              </li>
+              <li class="now__item">
+                <a href="#" class="now__item__link">
+                  <img
+                    src="/src/images/section/now/now3.png"
+                    alt="슬기선배님🥰우주소녀 왔어요"
+                    class="now__item__image"
+                  />
+                </a>
+              </li>
+              <li class="now__item">
+                <a href="#" class="now__item__link">
+                  <img
+                    src="/src/images/section/now/now4.png"
+                    alt="안녕, 이불킥 🥲 사랑했다💛💙"
+                    class="now__item__image"
+                  />
+                </a>
+              </li>
+              <li class="now__item">
+                <a href="#" class="now__item__link">
+                  <img
+                    src="/src/images/section/now/now5.png"
+                    alt="배개 옆 BGM"
+                    class="now__item__image"
+                  />
+                </a>
+              </li>
+              <li class="now__item">
+                <a href="#" class="now__item__link">
+                  <img
+                    src="/src/images/section/now/now6.png"
+                    alt="내 손으로 뽑는 제 2대 슈퍼밴드"
+                    class="now__item__image"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="content__card__item system">
+            <img
+              src="/src/images/section/content/system.jpg"
+              alt="네이버 비즈니스"
+              class="system__image"
+            />
+            <div class="system__wrap">
+              <span class="system__wrap__image"></span>
+              <a class="system__wrap__text">
+                <strong>네이버 SME 풀케어 시스템</strong>
+                <p>
+                  사업의 시작부터 성공까지
+                  <br />
+                  사장님의 경쟁력, 네이버
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="content__card__item vaccine">
+            <img
+              src="/src/images/section/content/vaccine.png"
+              alt="네이버 백신 예약"
+              class="vaccine__image"
+            />
+          </div>
+          <div class="content__card__item card-lg">
+            <img
+              src="/src/images/section/content/card-lg.jpg"
+              alt="현대카드 광고"
+              class="card-lg__image"
+            />
+            <div class="card-lg__wrap">
+              <img
+                src="https://s.pstatic.net/static/www/mobile/edit/20210827/upload_16300585158877Nm4F.jpg"
+                alt="네이버 멤버쉽"
+                class="card-lg__wrap__image"
+              />
+              <a class="card-lg__wrap__text">
+                <strong>네이버 현대카드</strong>
+                <p>
+                  1만원 캐시백, 멤버십 제공까지
+                  <br />
+                  네이버 현대카드 자세히 보기
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MoreEvent -->
+        <div class="content__more-event">
+          <a href="#" class="content__more-event__link">
+            <span class="content__more-event__image"></span>
+            <span class="content__more-event__text">이벤트 모아보기</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__util">
+          <a href="#" class="footer__util__link">로그아웃</a>
+          <a href="#" class="footer__util__link">전체서비스</a>
+          <a href="#" class="footer__util__link">PC버전</a>
+        </div>
+        <div class="footer__util">
+          <a href="#" class="footer__util__link">이용약관</a>
+          <a href="#" class="footer__util__link">개인정보처리방침</a>
+          <a href="#" class="footer__util__link">고객센터</a>
+        </div>
+        <div class="footer__util">
+          <a href="#" class="footer__util__link">
+            <span class="footer__util__logo"></span>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

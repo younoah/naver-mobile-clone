@@ -1,0 +1,358 @@
+@import './mixins';
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  &__ad {
+    margin: 64px auto 0px auto;
+    &__image {
+      width: 375px;
+    }
+  }
+
+  &__card {
+    max-height: 33vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 16px;
+
+    &__item {
+      width: 32vw;
+      margin: 0 16px 16px 0;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px 0 rgba(black, 0.06);
+      box-sizing: border-box;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__more-event {
+    margin-top: 24px;
+
+    &__link {
+      width: 240px;
+      height: 60px;
+      margin: 0 auto;
+      border-radius: 26px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    &__link::after {
+      width: 13px;
+      height: 13px;
+      margin: 2px 5px 0 5px;
+      @include setImage(
+        $url: '/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: -288px -226px
+      );
+    }
+
+    &__image {
+      margin-left: 24px;
+      width: 56px;
+      height: 53px;
+      margin-right: 5px;
+      @include setImage(
+        $url: '/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: 0 0
+      );
+    }
+
+    &__text {
+      margin-left: 16px;
+      font-size: 15px;
+      color: grey;
+    }
+  }
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 156px;
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+
+    &__image {
+      width: 42px;
+      min-width: 42px;
+      height: 42px;
+      margin: 8px;
+      @include setImage(
+        $url: '/src/images/sp/sp_weather_animation.png',
+        $size: 472px 447px,
+        $position: -47px -231px
+      );
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        display: inline;
+        color: #00a8ff;
+      }
+    }
+  }
+
+  &__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+      width: 16px;
+      height: 16px;
+      margin: 0 12px 0 4px;
+      @include setImage(
+        $url: '/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: -297px -297px
+      );
+    }
+
+    p {
+      font-size: 15px;
+      color: grey;
+    }
+  }
+
+  &__more {
+    margin: 0 auto;
+    text-align: center;
+    color: grey;
+  }
+}
+
+.card-sm {
+  display: flex;
+  justify-content: space-between;
+  &__image {
+    width: 70%;
+  }
+  &__close {
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+    @include setImage(
+      $url: '/src/images/sp/sp_search.png',
+      $size: 384px 381px,
+      $position: -354px -294px
+    );
+  }
+}
+
+.ai {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+    @include setImage(
+      $url: '/src/images/sp/sp_search.png',
+      $size: 384px 381px,
+      $position: -261px -135px
+    );
+  }
+
+  &__text {
+    margin-left: 8px;
+    font-size: 15px;
+  }
+
+  &__more {
+    margin: 16px;
+    font-size: 14px;
+    color: #03cf5d;
+  }
+  &__more::after {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 2px 1px 2px;
+    border: solid #03c95b;
+    border-width: 1px 1px 0 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: '';
+  }
+}
+
+.system {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__image {
+      width: 44px;
+      height: 44px;
+      margin: 16px;
+      @include setImage(
+        $url: '/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: -261px -135px
+      );
+    }
+
+    &__text {
+      margin-left: 8px;
+      font-size: 16px;
+
+      p {
+        font-size: 12px;
+        color: grey;
+      }
+    }
+  }
+}
+
+.now {
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__image {
+    width: 48px;
+    height: 14px;
+    margin: 24px;
+    align-self: flex-start;
+    @include setImage(
+      $url: '/src/images/sp/sp_search.png',
+      $size: 384px 381px,
+      $position: -215px -318px
+    );
+  }
+
+  &__list {
+    display: flex;
+    -ms-overflow-style: none;
+  }
+
+  &__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__item {
+    &__image {
+      position: relative;
+      width: 112px;
+      height: 112px;
+      margin: 8px 4px 48px 4px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.vaccine {
+  &__image {
+    width: 80%;
+  }
+}
+.card-lg {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__image {
+      width: 56px;
+      height: 56px;
+      margin: 8px;
+      @include setImage(
+        $url: '/src/images/sp/sp_search.png',
+        $size: 384px 381px,
+        $position: -261px -135px
+      );
+    }
+
+    &__text {
+      margin-left: 8px;
+      font-size: 16px;
+
+      p {
+        font-size: 12px;
+        color: grey;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1652px) {
+  .content__card {
+    max-height: 1000px;
+  }
+
+  .content__card__item {
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content__card {
+    max-height: 1000px;
+  }
+
+  .content__card__item {
+    width: 48vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content__card {
+    max-height: none;
+  }
+
+  .content__card__item {
+    width: 100%;
+  }
+}

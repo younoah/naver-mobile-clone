@@ -1,0 +1,70 @@
+@import './mixins';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+
+  &__menu {
+    width: 44px;
+    height: 44px;
+    margin: 8px;
+    display: inline-block;
+    @include setImage(
+      $url: '/src/images/sp/sp-main-search.png',
+      $size: 323px 234px,
+      $position: 0 -145px
+    );
+  }
+
+  &__mydata__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 8px;
+
+    &__item {
+      .qr {
+        width: 64px;
+        height: 29px;
+        @include setImage(
+          $url: '/src/images/sp/sp-main-search.png',
+          $size: 323px 234px,
+          $position: -196px -145px
+        );
+      }
+
+      .npay {
+        margin-left: 8px;
+        width: 40px;
+        height: 40px;
+        @include setImage(
+          $url: '/src/images/sp/sp-main-search.png',
+          $size: 323px 234px,
+          $position: -90px -194px
+        );
+      }
+
+      .alert {
+        width: 40px;
+        height: 40px;
+        @include setImage(
+          $url: '/src/images/sp/sp-main-search.png',
+          $size: 323px 234px,
+          $position: -47px -194px
+        );
+      }
+
+      .na {
+        width: 44px;
+        height: 44px;
+        @include setImage(
+          $url: '/src/images/sp/sp-main-search.png',
+          $size: 323px 234px,
+          $position: -262px -77px
+        );
+      }
+    }
+  }
+}

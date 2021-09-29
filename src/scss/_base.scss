@@ -1,0 +1,54 @@
+body {
+  background-color: #f4f6f8;
+}
+
+* {
+  margin: 0;
+}
+
+input,
+button {
+  border: none;
+}
+
+input:focus {
+  outline: opacify($color: #fff, $amount: 1);
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.scroll {
+  overflow: hidden;
+  overflow-x: auto;
+  width: 90%;
+  white-space: nowrap;
+}

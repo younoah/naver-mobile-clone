@@ -1,0 +1,50 @@
+@import './mixins';
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 488px;
+    max-width: 488px;
+    height: 52px;
+    padding: 0 10px;
+    border: 1px solid #03cf5d;
+    border-radius: 26px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(117, 145, 181, 0.12);
+  }
+
+  &__logo__image {
+    width: 40px;
+    height: 40px;
+    @include setImage(
+      $url: '/src/images/sp/sp-main-search.png',
+      $size: 323px 234px,
+      $position: 0 -194px
+    );
+    background-color: #03c75a;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 8px;
+    background-color: #fff;
+  }
+
+  &__button-voice {
+    width: 34px;
+    height: 34px;
+    @include setImage(
+      $url: '/src/images/sp/sp-main-search.png',
+      $size: 323px 234px,
+      $position: -135px -194px
+    );
+    background-color: #03c75a;
+  }
+}
